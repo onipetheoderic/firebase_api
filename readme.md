@@ -21,5 +21,5 @@ This is the recievers token, which is the devise token
 
 EndPoint Details
 ================
-POST with formData to = http://178.62.55.64:3500/
+POST with formData to = http://localhost:3500/api/send_notification
 
