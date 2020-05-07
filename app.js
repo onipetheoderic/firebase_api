@@ -44,19 +44,14 @@ var session = require('express-session');
 
 
 app.use(session({
-  name: 'inventory',
+  name: 'inventory22',
   secret: 'keyboard cat', 
   resave: false,
   saveUninitialized: false,
 cookie: {secure:false},
 }))
 
-app.use(function(req, res, next){
-  // if there's a flash message in the session request, make it available  
-    res.locals.sessionFlash = req.session.sessionFlash;
-    delete req.session.sessionFlash;
-    next();
-  });
+
 app.use(express.static(path.join(__dirname, 'views/public')));//this is for the css and js files in the template folder
 app.use(express.static(__dirname + '/public/'));
 
@@ -100,24 +95,6 @@ app.get('*', function(req, res, next){
 	res.locals.user = req.user || null;
 	next();
 });
-
-
-// // // error handler
-// app.use((err, req, res, next) => {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-//   console.log(res.locals.message)
-//   console.log(res.locals.error)
-//   console.log(err)
-
-//   // render the error page
-//   res.status(err.status || 500);
-//    res.render('errorpage/index', {layout: false, error_code: 404})
-//   console.log('error')
-// });
-
-
 
 hbs.registerHelper('json', function (content) {
     return JSON.stringify(content);
