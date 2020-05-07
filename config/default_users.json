@@ -1,0 +1,6 @@
+
+[
+    {"email":"theoderic@admin.com", "role":"1", "section":"all_sections", "isSuperAdmin":true, "password":"theoderic", "phoneNumber":"070391488866", "lastName": "Onipe", "firstName": "Theoderic", "gender":"male"},
+    {"email":"joshua@admin.com", "role":"1", "section":"all_sections", "isSuperAdmin":true, "password":"joshua1010", "phoneNumber":"070391488866","lastName": "Joshua", "firstName": "Joshua", "gender":"male"}
+]
+

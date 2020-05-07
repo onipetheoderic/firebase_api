@@ -1,0 +1,10 @@
+[
+    {"role_id":"1", "title": "super_admin"},
+    {"role_id":"2", "title": "special_adviser"},
+    {"role_id":"3", "title": "minister"},
+    {"role_id":"4", "title": "director"},
+    {"role_id":"5", "title": "desk_officer"},
+    {"role_id":"6", "title": "permanent_secretary"},
+    {"role_id":"7", "title": "site_engineers"}
+    
+]
